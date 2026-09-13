@@ -30,24 +30,21 @@ A reproducible sample of approximately **50,000 transactions** was used for the 
 
 ## Application Preview
 
-### Descriptive Statistics
+## Application Preview
 
-![Descriptive statistics](Screenshots/Statistics.png)
+### Descriptive Statistics
+<img src="Screenshots/Statistics.png" width="500">
 
 ### K-Means Customer Segmentation
+<img src="Screenshots/Cluster 1.png" width="500">
 
-![K-Means results](<Screenshots/Cluster 1.png>)
-
-![K-Means scatter plot](<Screenshots/Cluster 2.png>)
+<img src="Screenshots/Cluster 2.png" width="500">
 
 ### Logistic Regression
-
-![Logistic regression](Screenshots/Logistics.png)
+<img src="Screenshots/Logistics.png" width="500">
 
 ### Multiple Linear Regression
-
-![Multiple linear regression](<Screenshots/Multiple regression.png>)
-
+<img src="Screenshots/Multiple regression.png" width="500">
 ## Machine Learning
 
 ### K-Means Clustering
