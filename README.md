@@ -41,6 +41,7 @@ A reproducible sample of approximately **50,000 transactions** was used for the 
 
 ### Multiple Linear Regression
 <img src="Screenshots/Multiple regression.png" width="500">
+
 ## Machine Learning
 
 ### K-Means Clustering
