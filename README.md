@@ -1,33 +1,106 @@
-# Black Friday Analytics — Aplicație Streamlit
+# Black Friday Customer Analysis
 
-Aplicație Python (Streamlit) pentru analiza comportamentului de cumpărare în campania Black Friday.
+Data analysis and machine learning project developed using **Python, Streamlit and SAS** on the Analytics Vidhya Black Friday dataset.
 
-## Rulare
+## Main Features
 
-1. **Activează mediul virtual** (de fiecare dată când deschizi terminal-ul):
-   Windows (cmd):
+* Data preprocessing and missing value handling
+* Categorical encoding using `LabelEncoder`
+* Feature scaling with `StandardScaler` and `MinMaxScaler`
+* Descriptive statistics and aggregation with `pandas`
+* Interactive visualizations using `Plotly`
+* Customer segmentation using **K-Means**
+* **Logistic Regression** for High Spender classification
+* **Multiple Linear Regression (OLS)** for purchase value prediction
+* Interactive interface built with **Streamlit**
+* Parallel analysis in **SAS**
 
-   ```
-   venv\Scripts\activate
-   ```
+## Dataset
 
-   Mac/Linux:
+Original dataset:
 
-   ```
-   source venv/bin/activate
-   ```
+* 550,068 transactions
+* 5,891 unique customers
+* 3,631 products
+* 12 variables
 
-2. **Pornește aplicația**:
+A reproducible sample of approximately **50,000 transactions** was used for the Python and SAS analyses.
 
-   ```
-   streamlit run app.py
-   ```
+## Machine Learning
 
-3. **Aplicația se deschide automat** în browser la `http://localhost:8501`.
-4. **Pentru oprire**: Ctrl+C în terminal.
+### K-Means Clustering
 
-## Date
+Customers are aggregated by:
 
-Aplicația folosește un eșantion de 50.000 observații extras în SAS prin `PROC SURVEYSELECT` (seed=12345) din setul original de 550.068 tranzacții.
+* total purchase value
+* number of transactions
 
-Fișierul `bf_sample.csv` trebuie să existe în folderul `data/`.
+The features are standardized before applying:
+
+```python
+KMeans(n_clusters=4, random_state=42, n_init=10)
+```
+
+This produces four customer segments: Occasional, Loyal, Premium and VIP.
+
+### Logistic Regression
+
+Binary classification of transactions into:
+
+* High Spender
+* Low Spender
+
+The target is defined using the median purchase value.
+
+Model accuracy:
+
+```text
+62.94%
+```
+
+### Multiple Linear Regression
+
+Implemented using `statsmodels.OLS`.
+
+Results:
+
+```text
+R² = 0.1225
+RMSE ≈ 4608.88
+MAE ≈ 3539.43
+```
+
+## Technologies
+
+```text
+Python
+pandas
+scikit-learn
+statsmodels
+Plotly
+Streamlit
+SAS
+```
+
+## Run the Application
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run Streamlit:
+
+```bash
+streamlit run app.py
+```
+
+## Data Source
+
+Analytics Vidhya – Black Friday DataHack
+
+## Authors
+
+Gabriela Adăscăliței
+Oana Alexe
