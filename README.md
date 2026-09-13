@@ -28,10 +28,6 @@ A reproducible sample of approximately **50,000 transactions** was used for the 
 
 ## Application Preview
 
-## Application Preview
-
-## Application Preview
-
 ### Descriptive Statistics
 <img src="Screenshots/Statistics.png" width="500">
 
