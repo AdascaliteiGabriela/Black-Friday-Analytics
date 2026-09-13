@@ -4,27 +4,47 @@ Data analysis and machine learning project developed using **Python, Streamlit a
 
 ## Main Features
 
-* Data preprocessing and missing value handling
-* Categorical encoding using `LabelEncoder`
-* Feature scaling with `StandardScaler` and `MinMaxScaler`
-* Descriptive statistics and aggregation with `pandas`
-* Interactive visualizations using `Plotly`
-* Customer segmentation using **K-Means**
-* **Logistic Regression** for High Spender classification
-* **Multiple Linear Regression (OLS)** for purchase value prediction
-* Interactive interface built with **Streamlit**
-* Parallel analysis in **SAS**
+- Data preprocessing and missing value handling
+- Categorical encoding using `LabelEncoder`
+- Feature scaling with `StandardScaler` and `MinMaxScaler`
+- Descriptive statistics and aggregation with `pandas`
+- Interactive visualizations using `Plotly`
+- Customer segmentation using **K-Means**
+- **Logistic Regression** for High Spender classification
+- **Multiple Linear Regression (OLS)** for purchase value prediction
+- Interactive interface built with **Streamlit**
+- Parallel analysis in **SAS**
 
 ## Dataset
 
 Original dataset:
 
-* 550,068 transactions
-* 5,891 unique customers
-* 3,631 products
-* 12 variables
+- 550,068 transactions
+- 5,891 unique customers
+- 3,631 products
+- 12 variables
 
 A reproducible sample of approximately **50,000 transactions** was used for the Python and SAS analyses.
+
+## Application Preview
+
+### Descriptive Statistics
+
+![Descriptive statistics](Screenshots/statistics.png)
+
+### K-Means Customer Segmentation
+
+![K-Means results](Screenshots/kmeans-results.png)
+
+![K-Means scatter plot](Screenshots/kmeans-scatter.png)
+
+### Logistic Regression
+
+![Logistic regression](Screenshots/logistic-regression.png)
+
+### Multiple Linear Regression
+
+![Multiple linear regression](Screenshots/multiple-regression.png)
 
 ## Machine Learning
 
@@ -32,8 +52,8 @@ A reproducible sample of approximately **50,000 transactions** was used for the 
 
 Customers are aggregated by:
 
-* total purchase value
-* number of transactions
+- total purchase value
+- number of transactions
 
 The features are standardized before applying:
 
@@ -47,8 +67,8 @@ This produces four customer segments: Occasional, Loyal, Premium and VIP.
 
 Binary classification of transactions into:
 
-* High Spender
-* Low Spender
+- High Spender
+- Low Spender
 
 The target is defined using the median purchase value.
 
@@ -93,7 +113,7 @@ pip install -r requirements.txt
 Run Streamlit:
 
 ```bash
-streamlit run app.py
+streamlit run Intro.py
 ```
 
 ## Data Source
